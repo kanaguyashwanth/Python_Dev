@@ -1,0 +1,5 @@
+cd ---> current directory
+dir ---> lists the directories
+cd {filename} ---> go to directory
+cd .. ---> back
+cls ---> clear screen

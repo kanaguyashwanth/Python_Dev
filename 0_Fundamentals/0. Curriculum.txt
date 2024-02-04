@@ -1,0 +1,65 @@
+Course Link: https://hpeindia.udemy.com/course/complete-python-bootcamp/learn/lecture/3421834#overview
+
+Curriculum Overview:
+
+1. Object and Datastructure Basics:
+-Numbers
+-Strings
+-Lists
+-Dictionaries
+-Tuples
+-Files
+-Sets
+-Booleans
+
+2. Comparison Operators:
+-Basic Operators
+-Chained Comparison Operators
+
+3. Python Statements:
+-if, elif, and else
+-for loops
+-while loops
+-range()
+-List Comprehensions
+
+4. Methods and Functions:
+-Methods
+-Functions
+-Lambda Expressions
+-Nested Statements
+-Scope
+
+5. Object Oriented Programming (OOP)
+-Objects
+-Classes
+-Methods
+-Inheritance
+-Special Methods
+
+6. Errors and Exception Handling in Python:
+-Errors
+-Exceptions
+-try
+-except
+-finally
+
+7. Modules and Packages:
+-Creating Modules
+-Installing modules
+-Python Ecosystem
+
+8. Built-in Functions:
+-map
+-reduce
+-filter
+-zip
+-enumerate
+-all and any
+-complex
+
+9. Decorators in Python
+
+10. Generators:
+-Iteration vs Generation
+-Creating Generators

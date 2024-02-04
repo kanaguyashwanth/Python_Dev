@@ -1,0 +1,112 @@
+Syntax: Single or Double Quotes
+Example: "hi"
+	 'hi'
+
+x=yes
+-Strings are Immutable: Cannot change individual elements of a string.
+ 	      Solution: Concatenation, in this way, the strings can be altered. [x + "e"] [NOTE!]
+			Concatenation cannot be done with Number and character (Dynamic Typing - Datatype match then no error, else error)
+	      			- 2 + "yes": ERROR
+				- "2" + "2": 22
+			Multiplication, strings can be multiplied too [x*3]
+
+String Operations:
+	- x.upper()
+	- x.lower()
+	- x.split() - Can either split based on space or a character. Example x.split("a")
+		    - Removes the character specified and then splits [NOTE!]
+			EXAMPLE:
+			  x="Hi i am jk"
+		  	  x.split("i")
+			->OUTPUT: ["H", " ", " am jk"]
+
+String Formattings:
+	- .format() / float formatting {value:width.precision f} [SYNTAX]
+	- f-strings  [Formatted String Literals] [Skips the .format() method]
+
+	.format() / float formatting:
+		- Syntax: 'String here {} then also here {}'.format('something1', 'something2')
+		EXAMPLES:
+			Example_1:	
+			print('This is a string {}'.format('Is it?'))
+			OUTPUT: This is a string Is it?
+
+			Example_2:
+			print('The {} {} {}'.format('fox', 'brown', 'quick'))
+			OUTPUT:  The fox brown quick
+
+			Example_3:
+			print('The {2} {0} {1}'.format('fox', 'brown', 'quick'))
+			OUTPUT: The quick fox brown
+
+			Example_4:
+			print('The {0} {0} {0}'.format('fox', 'brown', 'quick'))
+			OUTPUT: The fox fox fox
+	
+			Example_5: [Using keywords to insert]
+			print('The {q} {b} {f}'.format(f='fox', b='brown', q='quick'))
+			OUTPUT: The quick brown fox
+
+			Example_6: [Using keywords to insert]
+			print('The {f} {f} {f}'.format(f='fox', b='brown', q='quick'))
+			OUTPUT: The fox fox fox
+
+			Example_7: [float formatting] {value:width.precision f}
+			result = 100/777        result: 0.1287001287001287, rounding the decimal upto 3 decimal places
+				            precisionf: How many decimal places?
+					         width: How much space you want to leave before the value
+						 value: variable with the value
+			print("The result was {r:1.3f}".format(r=result))
+			OUTPUT: The result was 1.129
+
+			Example_8: [float formatting] {value:width.precision f}
+			result = 100/777        result: 0.1287001287001287, rounding the decimal upto 3 decimal places
+				            precisionf: How many decimal places?
+					         width: How much space you want to leave before the value
+						 value: variable with the value
+			print("The result was {r:1.5f}".format(r=result))
+			OUTPUT: The result was 1.12870
+
+
+			Example_9: [float formatting] {value:width.precision f}
+			result = 100/777
+			print("The result was {r:10.3f}".format(r=result))
+			OUTPUT: The result was      1.129
+
+
+	f-strings: [Refer Github {Pierian-Data/Complete-Python3-Bootcamp/blob/master/00-Python Object and Data Structure Basics/03-String Formatting.ipynb} for more examples]
+		- Skips the .format() method
+		- Can write the variable name directly inside {} unlike .format()
+		EXAMPLE:
+			Example_1:
+			name = "Jose"
+			print(f"Hello, his name is {name})
+			OUTPUT: Hello, his name is Jose
+
+			Example_2:
+			name = "Sam"
+			age = 3
+			print(f"{name} is {age} years old.")
+			OUTPUT: Same is 3 years old.
+
+
+
+-Ordered Sequences [Sub-sections can be grabbed by the following operations]
+	-Supports Indexing
+	-Supports Slicing
+
+-Indexing: [Indicates what you wish to grab]
+	- Uses syntax []
+	-  Character: h  e  l  l  o
+               Index: 1  2  3  4  5
+	- Rev. Index: 0 -4 -3 -2 -1
+
+-Slicing: [Grab a subsection of multiple characters]
+	- Uses syntax [start:stop:step]
+	- start -> From that index (Includes that index)
+	- stop  -> Upto that index (Excludes that index)
+	- start is a numerical index for the slice start
+	
+
+Examples: 
+	len('I am') ---> OUTPUT: 4

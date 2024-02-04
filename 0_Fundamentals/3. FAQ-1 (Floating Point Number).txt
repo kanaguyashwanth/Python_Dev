@@ -1,0 +1,5 @@
+What is a floating point number?
+A number with a decimal - Example: 6.5
+
+In python, 1/2 is 0.5 which is a floating point number
+

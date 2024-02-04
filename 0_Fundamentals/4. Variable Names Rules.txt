@@ -1,0 +1,10 @@
+1. It cannot start with a number
+2. It cannot have spaces in between, must use uderscores (_)
+3. Cannot use any special characters
+4. Names are lower case and not in upper case
+5. Avoid using words like python keywords "list", "str"
+6. It supports Dynamic typing [Taking different Datatypes without Declaring them before]
+	-> my_dogs = 2
+	-> my_dogs = ["Sammy", "Frankie"]
+	-> type(my_dogs) ---> OUTPUT: list
+	This is okay in Python but that's not the case in C++
