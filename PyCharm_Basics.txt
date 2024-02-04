@@ -1,0 +1,45 @@
+PyCharm Shortcuts:
+
+Annotation - ALT + ENTER
+Search - SHIFT (Double times)
+Find All - CTRL + SHIFT + A
+
+Word Select - CTRL + W (Once)    [EXPANDING]
+Word Deselect - CTRL + SHIFT + W [SHRINK]
+String Select - CTRL + W (Twice)
+All under quotes - CTRL + W (Thrice)
+Whole call (inside f) - CTRL + W (Four times)
+
+Comment - CTRL + /
+Uncomment - CTRL + / (Select the comment and then perform)
+
+Duplicate Lines - CTRL + D
+Select Lines - SHIFT + Up
+Delete Lines - CTRL + Y
+
+Move a whole line of code up - ALT + SHIFT + Up
+Move a whole line of code down - ALT + SHIFT + Down
+Move a whole Method up - CTRL + SHIFT + Up
+Move a whole Method down - CTRL + SHIFT + Down
+
+Collapse a piece of code - CTRL + -
+Expand a piece of code - CTRL + =
+Collapse all in a file - CTRL + SHIFT + -
+Expand all in a file - CTRL + SHIFT + =
+
+Template - CTRL + ALT + T
+Delete Template - CTRL + SHIFT + T
+
+Select a word/symbol - ALT + J
+Select next occurance - ALT + J (Twice)
+Deselect occurance - ALT + SHIFT + J
+Select ALL occurance in file - CTRL + ALT + SHIFT + J
+Press ESC to reset multiple selection and return back.
+
+Activate Basic completion - CTRL + SPACE
+
+Smart Selection - CTRL + SHIFT + SPACE
+
+Select a variable to rename - SHIFT + F6
+
+
