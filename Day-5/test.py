@@ -127,6 +127,14 @@ NOTE:
 You can use a shuffle the list as below:
 
 import random
+letters = [
+    'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o',
+    'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D',
+    'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S',
+    'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
+]
+numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 
 password_list = ['j', 'u', 'X', 'S', '9', '8', '2', '6', ')', '#', '*', '(']
 print (password_list)
@@ -153,9 +161,78 @@ The shuffled string: 2!6&4VS5M%!gp%0
 """
 
 import random
-password_list = ['j', 'u', 'X', 'S', '9', '8', '2', '6', ')', '#', '*', '(']
-print(f"List before shuffling: {password_list}")
-random.shuffle(password_list)
-print(f"List after shuffling: {password_list}")
+letters = \
+[
+    'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o',
+    'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D',
+    'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S',
+    'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
+]
+numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 
 
+print('Welcome to the PyPassword Generator')
+n_letters = int(input("How many letters: "))
+n_symbols = int(input("How many symbols: "))
+n_numbers = int(input("How many numbers: "))
+
+
+# letter_randomization
+'''
+NOTE:
+len_letters = length of the letters list
+n_letters = how many letters
+'''
+len_letters = len(letters)
+random_letters = ''
+for n in range(0, n_letters):        # If n_letters = 5, then from 0 to 4(total=5)
+    rand_n = random.randint(0,(len_letters-1))
+    random_letters += letters[rand_n]
+print(random_letters)
+
+
+# numbers_randomization
+len_numbers = len(numbers)
+random_numbers = ''
+for n in range (0, n_numbers):
+    rand_n = random.randint(0,(len_numbers-1))
+    random_numbers += numbers[rand_n]
+print(random_numbers)
+
+
+# symbols_randomization
+len_symbols = len(symbols)
+random_symbols = ''
+for n in range (0, n_symbols):
+    rand_n = random.randint(0,(len_symbols-1))
+    random_symbols += symbols[rand_n]
+print(random_symbols)
+
+
+# password_generator
+password = random_letters + random_numbers + random_symbols
+print(type(password))
+print(password)
+# converting string type to list type, since strings are immutable
+len_password = len(password)
+password_list = [] # empty list
+for n in range(0, len_password):
+    password_list += password[n]
+print(f"List of characters for password: {password_list}")
+
+
+# shuffling_the_password_characters
+'''
+ALGORITHM:
+1. When one first index, swap it with random n
+2. Do the same till the last index
+'''
+
+len_passwordlist = len(password_list)
+for n in range(0, len_passwordlist):
+    rand_n = random.randint(0, len_passwordlist-1)
+    temp = password_list[n]
+    password_list[n] = password_list[rand_n]
+    password_list[rand_n] = temp
+print(f"The shuffled list of password: {password_list}")
